@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/style/index.css">
+    <title>Vue Coding Challenge</title>
+  </head>
+  <body>
+    <div id="modal-root"></div>
+    <div id="app">
+      <div class="container">
+        <div class="sidebar">
+          <div class="topbar">
+            <div class="logo"><img src="src/assets/images/Logo.svg" alt=""></div>
+            <div class="hamburger"><img class="menu-bar" src="src/assets/images/menu.svg" alt=""></div>
+          </div>
+
+          <ul>
+            <li><img src="src/assets/images/menu-icon.svg" alt="">dashboard</li>
+            <li><img src="src/assets/images/users.svg" alt="">customers</li>
+            <li><img src="src/assets/images/package.svg" alt="">products</li>
+            <li><img src="src/assets/images/file-minus.svg" alt="">transactions</li>
+            <li><img src="src/assets/images/Frame.svg" alt="">discounts</li>
+            <li><img src="src/assets/images/users.svg" alt="">customers Groups</li>
+            <li><img src="src/assets/images/file-minus2.svg" alt="">invoices</li>
+            <li><img src="src/assets/images/Frame2.svg" alt="">sales targets</li>
+
+          </ul>
+        </div>
+
+        <div class="content">
+          <h2 class="header">transactions (56)</h2>
+          <div class="balances">
+            <div class="btn-cont">
+              <div class="btns">
+                <button  class="income-btn"><img src="src/assets/images/plus.svg" alt="">add income</button>
+                <button class="expense-btn"><img src="src/assets/images/plus2.svg" alt="">add expenses</button>
+                <button class="viewdb-btn">view debts</button>
+                <div class="searcher"><img class="fa" src="src/assets/images/search.svg" alt=""><input type="text" placeholder="Search transactions"></div>
+                <button class="filter-btn"><img src="src/assets/images/ic-filter.svg" alt="">filter</button>
+              </div>
+            </div>
+
+            
+            <table>
+              <tr>
+                <th></th>
+                <th>date</th>
+                <th>customer name <img src="src/assets/images/sort-down.svg"></th>
+                <th>amount</th>
+                <th>payment method</th>
+                <th>products</th>
+                <th>quality</th>
+              </tr>
+
+              <tr class="sub-row">
+                <td></td>
+                <td><span class="bold">today</span></td>
+                <td><span class="bold">N <span>78,905.44</span></span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td>lukeman olawale</td>
+                <td class="debit">N4,500.60</td>
+                <td>card</td>
+                <td>-</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span>08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td><span>walex gbadamusi</span><span class="brk">wale@gmail.com</span></td>
+                <td><span class="dimmer">N<span>14,330.00</span></span><span class="brk debt-bal-cont">of <span class="debt-bal"><span>N</span>520,000,980.01</span></span></td>
+                <td>sbank transfer</td>
+                <td>freezed pie, zinny zip, vintage black</td>
+                <td>38</td>
+
+                <div class="more-info">
+                  <tr>
+                    <td><input type="radio" checked disabled></td>
+                    <td><span class="trans-info">12-apr-22</span><span class="brk trans-time">9:34<span>pm</span></span></td>
+                    <td><span class="trans-status">partial payment</span></td>
+                    <td><span class="pending">N3,970.40</span></td>
+                    <td><span class="pending">Bank transfer</span></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="radio" checked disabled></td>
+                    <td><span class="trans-info">08-apr-22</span><span class="brk trans-time">9:34<span>pm</span></span></td>
+                    <td><span class="trans-status">partial payment</span></td>
+                    <td><span class="pending">N10,470.40</span></td>
+                    <td><span class="pending">cash</span></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  
+                </div>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td>genny mojib</td>
+                <td><span>590.60</span></td>
+                <td>bank transfer</td>
+                <td>dinny zip, vintage black</td>
+                <td>27</td>
+              </tr>
+
+              <tr class="sub-row">
+                <td></td>
+                <td><span class="bold">yesterday</span></td>
+                <td><span class="bold">N<span>89,000.89</span></span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td>kashbobo lunyin</td>
+                <td><span>590.60</span></td>
+                <td>cash</td>
+                <td>ghosted graph</td>
+                <td>9</td>
+              </tr>
+
+              <tr class="sub-row">
+                <td></td>
+                <td><span class="light">14 may 2022</span></td>
+                <td><span class="bold">N<span>89,000.89</span></span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td>adesola okemoney</td>
+                <td class="debit">590.60</td>
+                <td>trasfer</td>
+                <td>-</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td><span>homini j</span><span class="brk">bussymoney@gmail.com</span></td>
+                <td><span>590.60</span></td>
+                <td>cash</td>
+                <td>ghosted gr</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td><span>abbey oluman</span><span class="brk">abbey@gmail.com</span></td>
+                <td><span>590.60</span></td>
+                <td>bank transfer</td>
+                <td>Huluman Wasabi</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td><span>Ojolistki Lagbaja</span><span class="brk">bussymoney@gmail.com</span></td>
+                <td><span>590.60</span></td>
+                <td>bank transfer</td>
+                <td>ginger bread</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td><input class="chbox" type="checkbox"></td>
+                <td><span >08-apr-22</span><span class="brk">9:34<span>pm</span></span></td>
+                <td><span>Joel Awele Jamiu</span><span class="brk">bussymoney@gmail.com</span></td>
+                <td><span>590.60</span></td>
+                <td>cash</td>
+                <td>pie free man skit</td>
+                <td>12</td>
+              </tr>
+
+            </table>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

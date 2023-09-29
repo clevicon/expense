@@ -1,0 +1,330 @@
+$noja-font-black:#2F3948;
+$noja-main-30:rgba(104, 104, 247, 0.30);
+$noja-primary-10:#F0F0FE;
+$noja-main:#6868F7;
+$noja-status-red:#EB5757;
+$status-red-30:rgba(235, 87, 87, 0.10);
+$noja-font-black:#2F3948;
+$input-field-field-placeholder:#BDBBC9;
+$Gray-6:#F2F2F2;
+$noja-background-two:#F5F6FC;
+$input-field-purple:#F0F0FE;
+$input-field-field-purple:#F9F9FF;
+$text-primary:#585757;
+$text-headline:#2F3948;
+$status-orange:#F2994A;
+$text-text-fade-1:#848484;
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+
+}
+.container{
+    display: flex;
+
+    .sidebar{
+        background: #F9FAFC;
+        box-shadow: 1px 0px 0px 0px rgba(104, 104, 247, 0.10);
+        width:20%;
+        height:100vh;
+        border-right:1px solid #BDBBC9;
+        padding: 0 16px;
+
+        .topbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 32px;
+            margin-bottom: 24px;
+            .menu-bar{
+                border: 1px solid #BDBBC9;
+                border-radius: 5px;
+                padding: 6px;
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        // background-color: red;
+
+            li{
+                color: $noja-font-black;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 171.429% */
+                padding: 12px 0px;
+                list-style: none;
+                text-transform:capitalize;
+                display: flex;
+                // align-items: center;
+
+                img{
+                    width: 22px;
+                    height: 22px;
+                    margin-right:12px;
+                }
+            }
+        }
+    }
+
+    .content{
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        width: 80%;
+
+        padding: 0 48px 0 48px;
+        background:$noja-background-two;
+
+        .header{
+            padding: 48px 0px 24px 0px;
+            text-transform: capitalize;
+            color: #5A5477;
+            font-size: 18px;
+            font-style: 16px;
+            font-weight: 600;
+            line-height: normal;
+
+        }
+        .balances{
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // padding: 16px;
+            background: white;
+        // padding: 0 48px 0 48px;
+
+
+            .btn-cont{
+                // display: flex;
+                // align-items: center;
+                background: white;
+                border-bottom: 1px solid #bdbbc939;
+                padding: 16px;
+                justify-content: center;
+
+                .btns{
+                    display: flex;
+                    gap: 16px;
+
+                    button{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 5px;
+                        font-family: Inter;
+                        font-size: 13px;
+                        font-weight: 500;
+                        padding:5px 16px;
+                        text-transform: capitalize;
+                        border-radius: 5px;
+                    }
+
+                    .income-btn{
+                        border: 1.5px solid $noja-main-30;
+                        background:$noja-primary-10;
+                        color:$noja-main;
+                    }
+
+                    .expense-btn{
+                        color:$noja-status-red;
+                        border: 1.5px solid $noja-status-red;
+                        background:$status-red-30;
+                    }
+
+                    .viewdb-btn {
+                        color:$noja-font-black;
+                        border: 1.5px solid $input-field-field-placeholder;
+                        background:$Gray-6;
+
+                    }
+
+                    .searcher{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 8px 16px 8px 10px;
+                        border-radius: 5px;
+                        border: 1.5px solid $input-field-purple;
+                        background: $input-field-purple;
+                        color: $input-field-field-placeholder;
+
+
+                        .fa{
+                            // width: 20px;
+                            // height: 20px;
+                            margin-right: 12px;
+                        }
+                        input{
+                            width: 400px;
+                            background: $input-field-purple;
+                            border: none;
+                            outline: none;
+                            color: $input-field-field-placeholder;
+
+                            &::placeholder{
+                            color: $input-field-field-placeholder;
+
+                            }
+                        }
+
+                    
+                    }
+
+                    .filter-btn{
+                        color:$noja-font-black;
+                        border: 1.5px solid $input-field-purple;
+                        background:$input-field-field-purple;
+                    }
+                }
+            }
+
+           
+            table{
+                border-collapse: collapse;
+                width:100%;
+                white-space: wrap;
+                color:$text-headline;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+
+                .sub-row{
+                    font-size: 12px;
+                    background:$input-field-field-purple;
+                    border-top:1.5px solid $input-field-purple ;
+                    border-bottom:1.5px solid $input-field-purple ;
+
+                    .bold,.light{
+                        // color: blue;
+                        color: $text-headline;
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+
+                    .light{
+                        color: $text-text-fade-1;
+                    }
+
+                }
+            }
+
+            tr{
+                
+                .brk{
+                    display: block;
+                    color:$text-primary;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-top: 4px;
+                    text-transform: lowercase;
+                    
+                    .debt-bal{
+                        color:$text-headline;
+                        font-weight: 700;
+                        font-size:14px;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .debt-bal-cont{
+                    font-size: 14px;
+                    color: $text-headline;
+                    text-transform: lowercase;
+                }
+                
+
+                .debit{
+                    color: $noja-status-red;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                td{
+                    color:$text-headline;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                   
+                    .chbox{
+                        // transform: scale(1.2);
+                        width: 18px;
+                        height: 18px;
+                        opacity:0.5;
+                        // filter: drop-shadow(2 10 5 red);
+                        // border-width:3px;
+                      
+                    }
+
+                   
+                }
+
+               
+
+                .dimmer{
+                    font-size: 14px;
+                    color:$text-text-fade-1;
+                    font-weight: 500;
+                }
+        
+            
+                .trans-info,.trans-time{
+                    font-size: 12px;
+                    color: $input-field-field-placeholder; 
+                }
+
+                .trans-time{
+                    font-size: 11px;
+                    font-weight: 400;
+                }
+
+                .trans-status{
+                    font-size: 11px;
+                    font-family:Open Sans;
+                    color:$status-orange;
+                    font-weight: 600;
+                    background-color: #F2994A1A;
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                }
+
+                .pending{
+                    color: $status-orange;
+                }
+                        
+                    
+
+
+               
+            }
+
+            td,th{
+                // padding-left: 16px;
+                // padding-right:16px;
+                text-align:left;
+                padding: 10px 16px;
+                text-transform: capitalize;
+            }
+
+            th{
+                font-size: 12px;
+                font-weight: 600;
+                color: $text-primary;
+            }
+            
+        }
+    }
+}
